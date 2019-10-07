@@ -22,15 +22,15 @@ public class MainActivity extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.avengers_list);
         ArrayList<Avenger> AvengersList = new ArrayList<>();
-        AvengersList.add(new Avenger(R.drawable.cap, "Captain America" , "2013"));
-        AvengersList.add(new Avenger(R.drawable.iron, "Iron Man" , "2017"));
-        AvengersList.add(new Avenger(R.drawable.thor, "Thor" , "2016"));
-        AvengersList.add(new Avenger(R.drawable.panth, "Black Panther" , "2014"));
-        AvengersList.add(new Avenger(R.drawable.blwid, "Black Widow" , "1999"));
-        AvengersList.add(new Avenger(R.drawable.witch, "Scarlet Witch" , "1975"));
-        AvengersList.add(new Avenger(R.drawable.ant, "Ant Man" , "2011"));
-        AvengersList.add(new Avenger(R.drawable.hulk, "Hulk" , "2016"));
-        AvengersList.add(new Avenger(R.drawable.hawk, "Hawk-Eye" , "2011"));
+        AvengersList.add(new Avenger(R.drawable.cap, "Captain America" , "The First Avenger"));
+        AvengersList.add(new Avenger(R.drawable.iron, "Iron Man" , "I Love You 3000"));
+        AvengersList.add(new Avenger(R.drawable.thor, "Thor" , "God of Thunder"));
+        AvengersList.add(new Avenger(R.drawable.panth, "Black Panther" , "King of Wakanda"));
+        AvengersList.add(new Avenger(R.drawable.blwid, "Black Widow" , "Hottest Avenger"));
+        AvengersList.add(new Avenger(R.drawable.witch, "Scarlet Witch" , "My favourite"));
+        AvengersList.add(new Avenger(R.drawable.ant, "Ant Man" , "Funniest Avenger"));
+        AvengersList.add(new Avenger(R.drawable.hulk, "Hulk" , "Mightiest"));
+        AvengersList.add(new Avenger(R.drawable.hawk, "Hawk-Eye" , "Baaz ki Nazar"));
 
         mAdapter = new AvengerAdapter(this,AvengersList);
         listView.setAdapter(mAdapter);

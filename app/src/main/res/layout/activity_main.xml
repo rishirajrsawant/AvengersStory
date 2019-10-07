@@ -5,9 +5,11 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".MainActivity">
 
-<ListView
-    android:id="@+id/avengers_list"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/avengers_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?attr/dividerHorizontal"
+        android:dividerHeight="5dp" />
 
 </LinearLayout>
