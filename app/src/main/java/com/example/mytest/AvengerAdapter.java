@@ -36,13 +36,14 @@ import java.util.List;
             Avenger currentMovie = moviesList.get(position);
 
             ImageView image = (ImageView)listItem.findViewById(R.id.imageView_poster);
+            int imageID =
             image.setImageResource(currentMovie.getmImageDrawable());
 
             TextView name = (TextView) listItem.findViewById(R.id.textView_name);
             name.setText(currentMovie.getmName());
 
-            TextView release = (TextView) listItem.findViewById(R.id.textView_release);
-            release.setText(currentMovie.getmRelease());
+            TextView desc = (TextView) listItem.findViewById(R.id.textView_desc);
+            desc.setText(currentMovie.getmDesc());
 
             return listItem;
         }

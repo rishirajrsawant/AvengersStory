@@ -18,7 +18,7 @@ android:layout_height="match_parent">
     android:textStyle="bold"/>
 
 <TextView
-    android:id="@+id/textView_release"
+    android:id="@+id/textView_desc"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_toRightOf="@id/imageView_poster"

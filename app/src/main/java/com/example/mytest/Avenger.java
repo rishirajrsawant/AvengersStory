@@ -2,24 +2,25 @@ package com.example.mytest;
 
 public class Avenger {
     // Store the id of the  movie poster
-    private int mImageDrawable;
+    private String mImageDrawable;
     // Store the name of the movie
     private String mName;
     // Store the release date of the movie
-    private String mRelease;
+    private String mDesc;
 
     // Constructor that is used to create an instance of the Movie object
-    public Avenger(int mImageDrawable, String mName, String mRelease) {
+    public Avenger(String mImageDrawable, String mName, String mDesc) {
         this.mImageDrawable = mImageDrawable;
         this.mName = mName;
-        this.mRelease = mRelease;
+        this.mDesc = mDesc;
     }
 
-    public int getmImageDrawable() {
+    public String getmImageDrawable() {
         return mImageDrawable;
     }
 
-    public void setmImageDrawable(int mImageDrawable) {
+    public void setmImageDrawable(String mImageDrawable) {
+
         this.mImageDrawable = mImageDrawable;
     }
 
@@ -31,11 +32,13 @@ public class Avenger {
         this.mName = mName;
     }
 
-    public String getmRelease() {
-        return mRelease;
+    public String getmDesc() {
+
+        return mDesc;
     }
 
-    public void setmRelease(String mRelease) {
-        this.mRelease = mRelease;
+    public void setmDesc(String mDesc) {
+
+        this.mDesc = mDesc;
     }
 }

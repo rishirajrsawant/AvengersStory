@@ -1,0 +1,12 @@
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="avengers.xsd" generated="2011-11-05T23:09:59">
+    <avenger>
+        <mImageDrawable>cap.jpg</mImageDrawable>
+        <mName>Captain America</mName>
+        <mDesc>First Avenger</mDesc>
+    </avenger>
+    <avenger>
+        <mImageDrawable>iron.jpg</mImageDrawable>
+        <mName>Iron Man</mName>
+        <mDesc>Love for 3000</mDesc>
+    </avenger>
+</dataroot>
