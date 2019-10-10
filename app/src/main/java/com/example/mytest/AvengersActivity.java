@@ -1,19 +1,27 @@
 package com.example.mytest;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.nfc.Tag;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 public class AvengersActivity extends AppCompatActivity {
 
     private ListView avengersList = null;
-    private ArrayAdapter<String> adapter = null;
-    private AvengersXMLData data = null;
+    private AvengersXMLData data;
+    private ArrayList<Avenger> AvengerList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +30,36 @@ public class AvengersActivity extends AppCompatActivity {
 
         data = new AvengersXMLData(this);
 
+        //int length = data.getLength();
+        for (int i = 0; i < data.getLength(); i++) {
+            AvengerList.add(data.getAvenger(i));
+        }
+
+
         avengersList = findViewById(R.id.avengers_list);
-        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, data.getNames());
+
+        AvengerAdapter adapter = new AvengerAdapter(this, R.layout.list_item, AvengerList);
         avengersList.setAdapter(adapter);
+
 
         /*avengersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Intent intent = new Intent(PeopleActivity.this, PersonActivity.class);
-                //Bundle bundle = new Bundle();
-
-                //bundle.putSerializable("data", data.getAvenger(i));
-                //intent.putExtras(bundle);
-                //startActivity(intent);
+                MediaPlayer ring= MediaPlayer.create(AvengersActivity.this,R.raw.hulkroar);
+                ring.start();
             }
         });*/
+
+        avengersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(AvengersActivity.this, AvengerDetails.class);
+                Bundle bundle = new Bundle();
+
+                bundle.putSerializable("data", data.getAvenger(i));
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
     }
 }

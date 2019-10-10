@@ -1,12 +1,56 @@
 <dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="avengers.xsd" generated="2011-11-05T23:09:59">
     <avenger>
+        <mID>captain</mID>
         <mImageDrawable>cap.jpg</mImageDrawable>
         <mName>Captain America</mName>
         <mDesc>First Avenger</mDesc>
     </avenger>
     <avenger>
+        <mID>ironman</mID>
         <mImageDrawable>iron.jpg</mImageDrawable>
         <mName>Iron Man</mName>
         <mDesc>Love for 3000</mDesc>
+    </avenger>
+    <avenger>
+        <mID>thor</mID>
+        <mImageDrawable>thor.png</mImageDrawable>
+        <mName>Thor</mName>
+        <mDesc>God of Thunder</mDesc>
+    </avenger>
+    <avenger>
+        <mID>widow</mID>
+        <mImageDrawable>blwid.jpg</mImageDrawable>
+        <mName>Black Widow</mName>
+        <mDesc>Hottest Avenger</mDesc>
+    </avenger>
+    <avenger>
+        <mID>panther</mID>
+        <mImageDrawable>panth.jpg</mImageDrawable>
+        <mName>Black Panther</mName>
+        <mDesc>Wakanda Forever</mDesc>
+    </avenger>
+    <avenger>
+        <mID>witch</mID>
+        <mImageDrawable>witch.jpg</mImageDrawable>
+        <mName>Scarlet Witch</mName>
+        <mDesc>My Favourite Avenger</mDesc>
+    </avenger>
+    <avenger>
+        <mID>hulk</mID>
+        <mImageDrawable>hulk.jpg</mImageDrawable>
+        <mName>Hulk</mName>
+        <mDesc>Mightiest One</mDesc>
+    </avenger>
+    <avenger>
+        <mID>hawk</mID>
+        <mImageDrawable>hawk.jpg</mImageDrawable>
+        <mName>Hawk Eye</mName>
+        <mDesc>Baaz ki Nazar</mDesc>
+    </avenger>
+    <avenger>
+        <mID>ant</mID>
+        <mImageDrawable>ant.jpeg</mImageDrawable>
+        <mName>Ant Man</mName>
+        <mDesc>Hilarious One</mDesc>
     </avenger>
 </dataroot>

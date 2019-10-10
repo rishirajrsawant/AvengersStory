@@ -1,6 +1,7 @@
 package com.example.mytest;
 
 import android.content.Context;
+import android.util.Log;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
@@ -12,7 +13,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 public class AvengersXMLData {
 
-    private Avenger [] data;
+    public Avenger [] data;
     private Context context;
 
     public AvengersXMLData(Context c){
@@ -33,27 +34,32 @@ public class AvengersXMLData {
 
 
         //slice document into 5 NodeList for name, image, etc
+        NodeList idList     = xml.getElementsByTagName("mID");
         NodeList imageList  = xml.getElementsByTagName("mImageDrawable");
         NodeList nameList   = xml.getElementsByTagName("mName");
         NodeList descList   = xml.getElementsByTagName("mDesc");
 
         //traverse the list to make data
-        data = new Avenger[imageList.getLength()];
+        data = new Avenger[nameList.getLength()];
 
         for (int i = 0; i < data.length; i++) {
 
+            String mID              = idList.item(i).getFirstChild().getNodeValue();
             String mImageDrawable   = imageList.item(i).getFirstChild().getNodeValue();
-            String mName    = nameList.item(i).getFirstChild().getNodeValue();
-            String mDesc    = descList.item(i).getFirstChild().getNodeValue();
+            String mName            = nameList.item(i).getFirstChild().getNodeValue();
+            String mDesc            = descList.item(i).getFirstChild().getNodeValue();
 
-            data[i] = new Avenger(mImageDrawable, mName, mDesc);
+            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc);
         }
     }
 
     public Avenger getAvenger(int i){
+
+
         return data[i];
     }
-    public int    getLength(){
+    public int getLength(){
+
         return data.length;
     }
     public String [] getNames(){
@@ -66,5 +72,27 @@ public class AvengersXMLData {
             names[i] = data[i].getmName();
         }
         return names;
+    }
+    public String [] getDescs(){
+
+        //construct the string
+        String [] descs = new String[data.length];
+
+        //populate it with names
+        for (int i = 0; i < data.length; i++){
+            descs[i] = data[i].getmDesc();
+        }
+        return descs;
+    }
+    public String [] getImages(){
+
+        //construct the string
+        String [] images = new String[data.length];
+
+        //populate it with names
+        for (int i = 0; i < data.length; i++){
+            images[i] = data[i].getmImageDrawable();
+        }
+        return images;
     }
 }

@@ -1,18 +1,32 @@
 package com.example.mytest;
 
-public class Avenger {
-    // Store the id of the  movie poster
+import java.io.Serializable;
+
+public class Avenger implements Serializable {
+    //Store the id of the Avenger
+    private String mID;
+    // Store the image of the  Avenger
     private String mImageDrawable;
     // Store the name of the movie
     private String mName;
-    // Store the release date of the movie
+    // Store the description of the Avenger
     private String mDesc;
 
-    // Constructor that is used to create an instance of the Movie object
-    public Avenger(String mImageDrawable, String mName, String mDesc) {
+
+    // Constructor that is used to create an instance of the Avenger object
+    public Avenger(String mID, String mImageDrawable, String mName, String mDesc) {
+        this.mID = mID;
         this.mImageDrawable = mImageDrawable;
         this.mName = mName;
         this.mDesc = mDesc;
+    }
+
+    public String getmID() {
+        return mID;
+    }
+
+    public void setmID(String mID) {
+        this.mID = mID;
     }
 
     public String getmImageDrawable() {
@@ -41,4 +55,5 @@ public class Avenger {
 
         this.mDesc = mDesc;
     }
+
 }

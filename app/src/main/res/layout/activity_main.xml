@@ -3,13 +3,13 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-tools:context=".MainActivity">
+tools:context=".AvengersActivity">
 
     <ListView
         android:id="@+id/avengers_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="?attr/dividerHorizontal"
-        android:dividerHeight="5dp" />
+        android:dividerHeight="2dp" />
 
 </LinearLayout>
