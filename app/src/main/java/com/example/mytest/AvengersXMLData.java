@@ -38,6 +38,11 @@ public class AvengersXMLData {
         NodeList imageList  = xml.getElementsByTagName("mImageDrawable");
         NodeList nameList   = xml.getElementsByTagName("mName");
         NodeList descList   = xml.getElementsByTagName("mDesc");
+        NodeList realimList = xml.getElementsByTagName("mRealName");
+        NodeList ageList    = xml.getElementsByTagName("mAge");
+        NodeList famList    = xml.getElementsByTagName("mFam");
+        NodeList noAvgList  = xml.getElementsByTagName("mNoAvenger");
+        NodeList impList    = xml.getElementsByTagName("mImp");
 
         //traverse the list to make data
         data = new Avenger[nameList.getLength()];
@@ -48,8 +53,13 @@ public class AvengersXMLData {
             String mImageDrawable   = imageList.item(i).getFirstChild().getNodeValue();
             String mName            = nameList.item(i).getFirstChild().getNodeValue();
             String mDesc            = descList.item(i).getFirstChild().getNodeValue();
+            String mRealName        = realimList.item(i).getFirstChild().getNodeValue();
+            String mAge             = ageList.item(i).getFirstChild().getNodeValue();
+            String mFam             = famList.item(i).getFirstChild().getNodeValue();
+            String mNoAvenger       = noAvgList.item(i).getFirstChild().getNodeValue();
+            String mImp             = impList.item(i).getFirstChild().getNodeValue();
 
-            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc);
+            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc, mRealName, mAge, mFam, mNoAvenger, mImp);
         }
     }
 
@@ -62,7 +72,7 @@ public class AvengersXMLData {
 
         return data.length;
     }
-    public String [] getNames(){
+    /*public String [] getNames(){
 
         //construct the string
         String [] names = new String[data.length];
@@ -94,5 +104,5 @@ public class AvengersXMLData {
             images[i] = data[i].getmImageDrawable();
         }
         return images;
-    }
+    }*/
 }

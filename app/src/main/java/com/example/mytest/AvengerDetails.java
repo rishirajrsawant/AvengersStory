@@ -3,14 +3,20 @@ package com.example.mytest;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.AssetManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public class AvengerDetails extends AppCompatActivity {
 
     //define the elements of layout file
-    private TextView name;
+    private TextView name, real_name, age, fam, noAvenger, imp;
     private ImageView image_poster;
 
     private Avenger data = null;
@@ -22,6 +28,11 @@ public class AvengerDetails extends AppCompatActivity {
 
         name = findViewById(R.id.textView);
         image_poster = findViewById(R.id.imageView2);
+        real_name    = findViewById(R.id.textview_realname);
+        age          = findViewById(R.id.textview_agetext);
+        fam          = findViewById(R.id.textview_family);
+        noAvenger    = findViewById(R.id.textview_noavg);
+        imp          = findViewById(R.id.textview_imp);
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
@@ -29,6 +40,22 @@ public class AvengerDetails extends AppCompatActivity {
         data = (Avenger)bundle.getSerializable("data");
 
         name.setText(data.getmName());
+
+        AssetManager assetManager = getAssets();
+        InputStream inputStream = null;
+        try {
+            inputStream = assetManager.open("avengers/"+data.getmID()+"/"+data.getmImageDrawable());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+        image_poster.setImageBitmap(bitmap);
+
+        real_name.setText(data.getmRealName());
+        age.setText(data.getmAge());
+        fam.setText(data.getmFam());
+        noAvenger.setText(data.getmNoAvenger());
+        imp.setText(data.getmImp());
 
 
     }
