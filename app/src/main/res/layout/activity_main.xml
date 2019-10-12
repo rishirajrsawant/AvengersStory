@@ -3,14 +3,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#00111a"
+    android:orientation="vertical"
     tools:context=".AvengersActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="AVENGERS REVEAL"
+        android:textAlignment="center"
+        android:textColor="#bfbfbf"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/gradient" />
 
     <ListView
         android:id="@+id/avengers_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="?attr/dividerHorizontal"
-        android:dividerHeight="2dp" />
-
+        android:divider="@drawable/gradient"
+        android:dividerHeight="3dp" />
 </LinearLayout>
