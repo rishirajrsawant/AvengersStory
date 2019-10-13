@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".AvengerDetails"></activity>
-        <!-- <activity android:name=".DetailsActivity"></activity> -->
-        <activity android:name=".AvengersActivity">
+        <activity android:name=".AvengersActivity" />
+        <activity android:name=".MoreFacts" />
+        <activity android:name=".AvengerDetails" /> <!-- <activity android:name=".DetailsActivity"></activity> -->
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

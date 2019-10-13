@@ -7,6 +7,9 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +21,8 @@ public class AvengerDetails extends AppCompatActivity {
     //define the elements of layout file
     private TextView name, real_name, age, fam, noAvenger, imp;
     private ImageView image_poster;
+
+    private Button moreBtn = null;
 
     private Avenger data = null;
 
@@ -33,8 +38,9 @@ public class AvengerDetails extends AppCompatActivity {
         fam          = findViewById(R.id.textview_family);
         noAvenger    = findViewById(R.id.textview_noavg);
         imp          = findViewById(R.id.textview_imp);
+        moreBtn      = findViewById(R.id.button);
 
-        Intent intent = getIntent();
+        final Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
         data = (Avenger)bundle.getSerializable("data");
@@ -56,6 +62,18 @@ public class AvengerDetails extends AppCompatActivity {
         fam.setText(data.getmFam());
         noAvenger.setText(data.getmNoAvenger());
         imp.setText(data.getmImp());
+
+        moreBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent more = new Intent(AvengerDetails.this, MoreFacts.class);
+                Bundle bundle1 = new Bundle();
+
+                bundle1.putSerializable("data", data);
+                more.putExtras(bundle1);
+                startActivity(more);
+            }
+        });
 
 
     }

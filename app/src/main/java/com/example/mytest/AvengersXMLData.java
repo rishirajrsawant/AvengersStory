@@ -43,6 +43,7 @@ public class AvengersXMLData {
         NodeList famList    = xml.getElementsByTagName("mFam");
         NodeList noAvgList  = xml.getElementsByTagName("mNoAvenger");
         NodeList impList    = xml.getElementsByTagName("mImp");
+        NodeList musicList  = xml.getElementsByTagName("mScream");
 
         //traverse the list to make data
         data = new Avenger[nameList.getLength()];
@@ -58,8 +59,10 @@ public class AvengersXMLData {
             String mFam             = famList.item(i).getFirstChild().getNodeValue();
             String mNoAvenger       = noAvgList.item(i).getFirstChild().getNodeValue();
             String mImp             = impList.item(i).getFirstChild().getNodeValue();
+            String mScream          = musicList.item(i).getFirstChild().getNodeValue();
+            Log.e("Rishi", "inside xmlfile");
 
-            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc, mRealName, mAge, mFam, mNoAvenger, mImp);
+            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc, mRealName, mAge, mFam, mNoAvenger, mImp, mScream);
         }
     }
 

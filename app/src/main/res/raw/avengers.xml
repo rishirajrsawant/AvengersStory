@@ -9,6 +9,7 @@
         <mFam>Roger that</mFam>
         <mNoAvenger>Slimmest Person</mNoAvenger>
         <mImp>Quick Healing Ability</mImp>
+        <mScream>cap.mp3</mScream>
     </avenger>
     <avenger>
         <mID>ironman</mID>
@@ -20,6 +21,7 @@
         <mFam>No relation with Arya Stark</mFam>
         <mNoAvenger>Genius, Playboy, Millionaire</mNoAvenger>
         <mImp>Brilliant Mind</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
     <avenger>
         <mID>thor</mID>
@@ -31,6 +33,7 @@
         <mFam>Family of Gods</mFam>
         <mNoAvenger>Drunkard</mNoAvenger>
         <mImp>Superman of Marvel</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
     <avenger>
         <mID>widow</mID>
@@ -42,6 +45,7 @@
         <mFam>Orphanage</mFam>
         <mNoAvenger>Hottest celebrity ever</mNoAvenger>
         <mImp>Can Control Hulk</mImp>
+        <mScream>widow.mp3</mScream>
     </avenger>
     <avenger>
         <mID>panther</mID>
@@ -53,6 +57,7 @@
         <mFam>Challa and Challa Brothers</mFam>
         <mNoAvenger>Miner of Vibranium</mNoAvenger>
         <mImp>Use of Kinetic Energy</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
     <avenger>
         <mID>witch</mID>
@@ -64,6 +69,7 @@
         <mFam>Only brother left was QuickSilver(RIP)</mFam>
         <mNoAvenger>Dancer because her hands are very graceful</mNoAvenger>
         <mImp>If angry, can make Thanos cry</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
     <avenger>
         <mID>hulk</mID>
@@ -75,6 +81,7 @@
         <mFam>Only love for Natasha</mFam>
         <mNoAvenger>Awesome Scientist</mNoAvenger>
         <mImp>Even Iron Man is scared of him</mImp>
+        <mScream>hulkroar.mp3</mScream>
     </avenger>
     <avenger>
         <mID>hawk</mID>
@@ -86,6 +93,7 @@
         <mFam>One cool wife and 2 awesome kids</mFam>
         <mNoAvenger>Arjun of Mahabharata</mNoAvenger>
         <mImp>Can Replace Sniper</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
     <avenger>
         <mID>ant</mID>
@@ -97,5 +105,6 @@
         <mFam>One beautiful daughter</mFam>
         <mNoAvenger>Consultant</mNoAvenger>
         <mImp>Resizable</mImp>
+        <mScream>ironman.mp3</mScream>
     </avenger>
 </dataroot>

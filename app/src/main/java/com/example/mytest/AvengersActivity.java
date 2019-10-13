@@ -53,6 +53,8 @@ public class AvengersActivity extends AppCompatActivity {
             }
         });*/
 
+        Log.e("rishi", "inside main");
+
         avengersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
