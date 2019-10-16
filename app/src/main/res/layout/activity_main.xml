@@ -11,17 +11,16 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:text="AVENGERS REVEAL"
+        android:text="AVENGERS ASSEMBLE"
         android:textAlignment="center"
-        android:textColor="#bfbfbf"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textColor="#a6a6a6"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:textSize="30sp" />
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="5dp"
+        android:layout_height="4dp"
         android:background="@drawable/gradient" />
 
     <ListView

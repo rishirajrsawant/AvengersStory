@@ -18,7 +18,7 @@ import java.io.InputStream;
 
 public class MoreFacts extends AppCompatActivity {
 
-    private Button playBtn = null;
+    private Button playBtn = null, orgBtn = null;
 
     private Avenger data = null;
 
@@ -28,6 +28,7 @@ public class MoreFacts extends AppCompatActivity {
         setContentView(R.layout.activity_more_facts);
 
         playBtn = findViewById(R.id.button2);
+        orgBtn  = findViewById(R.id.button3);
 
         final Intent more = getIntent();
         Bundle bundle1 = more.getExtras();
@@ -50,6 +51,18 @@ public class MoreFacts extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+            }
+        });
+
+        orgBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent web = new Intent(MoreFacts.this, WebViewAct.class);
+                Bundle bundleweb = new Bundle();
+
+                bundleweb.putSerializable("data", data);
+                web.putExtras(bundleweb);
+                startActivity(web);
             }
         });
     }

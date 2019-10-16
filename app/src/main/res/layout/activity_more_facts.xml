@@ -15,7 +15,16 @@
         android:text="PORTFOLIO"
         android:textColor="#bfbfbf"
         android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_mono_medium" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textView3"
+        android:layout_above="@+id/button2"/>
 
     <Button
         android:id="@+id/button2"
@@ -29,7 +38,25 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/my_button_bg"
-        android:text="PLAY ME"
+        android:text="PLAY MY VOICE"
         android:textAlignment="center"
-        android:textColor="#bfbfbf" />
+        android:textColor="#bfbfbf"
+        android:fontFamily="@font/roboto_mono_medium" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/my_button_bg"
+        android:text="READ MY ORIGINS"
+        android:textAlignment="center"
+        android:textColor="#bfbfbf"
+        android:fontFamily="@font/roboto_mono_medium" />
 </RelativeLayout>

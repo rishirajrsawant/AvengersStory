@@ -13,11 +13,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:text="Name"
+        android:text="NAME"
         android:textAlignment="center"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#a6a6a6" />
+        android:textColor="#a6a6a6"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -40,8 +40,8 @@
         android:text="REAL IDENTITY"
         android:textAlignment="center"
         android:textSize="22sp"
-        android:textStyle="bold"
-        android:textColor="#a6a6a6" />
+        android:textColor="#a6a6a6" 
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textView_rlnmlbl"
@@ -55,8 +55,8 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below = "@+id/textView5"/>
+        android:layout_below = "@+id/textView5"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_agelbl"
@@ -70,8 +70,8 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below = "@+id/textView_rlnmlbl"/>
+        android:layout_below = "@+id/textView_rlnmlbl"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_fam"
@@ -85,8 +85,8 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below = "@+id/textview_agelbl"/>
+        android:layout_below = "@+id/textview_agelbl"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_noavglbl"
@@ -100,8 +100,8 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below = "@+id/textview_fam"/>
+        android:layout_below = "@+id/textview_fam"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_implbl"
@@ -115,8 +115,8 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_below = "@+id/textview_noavglbl"/>
+        android:layout_below = "@+id/textview_noavglbl"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_realname"
@@ -130,9 +130,9 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_below="@+id/textView5"
-        android:layout_toRightOf="@+id/textView_rlnmlbl"/>
+        android:layout_toRightOf="@+id/textView_rlnmlbl"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_agetext"
@@ -146,9 +146,9 @@
         android:textAlignment="center"
         android:textColor="#a6a6a6"
         android:textSize="18sp"
-        android:textStyle="bold"
         android:layout_below="@+id/textView_rlnmlbl"
-        android:layout_toRightOf="@+id/textview_agelbl"/>
+        android:layout_toRightOf="@+id/textview_agelbl"
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_family"
@@ -160,8 +160,8 @@
         android:layout_below="@+id/textview_agelbl"
         android:layout_toRightOf="@+id/textview_fam"
         android:layout_margin="18dp"
-        android:textStyle="bold"
-        android:textColor="#a6a6a6" />
+        android:textColor="#a6a6a6" 
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_noavg"
@@ -173,8 +173,8 @@
         android:layout_below="@+id/textview_fam"
         android:layout_toRightOf="@+id/textview_noavglbl"
         android:layout_margin="18dp"
-        android:textStyle="bold"
-        android:textColor="#a6a6a6" />
+        android:textColor="#a6a6a6" 
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <TextView
         android:id="@+id/textview_imp"
@@ -186,8 +186,8 @@
         android:layout_below="@+id/textview_noavglbl"
         android:layout_toRightOf="@+id/textview_implbl"
         android:layout_margin="18dp"
-        android:textStyle="bold"
-        android:textColor="#a6a6a6" />
+        android:textColor="#a6a6a6" 
+        android:fontFamily="@font/roboto_mono_medium" />
 
     <Button
         android:id="@+id/button"
@@ -203,6 +203,7 @@
         android:text="MORE INFO"
         android:textAlignment="center"
         android:textColor="#bfbfbf"
-        android:textSize="18sp" />
+        android:textSize="18sp" 
+        android:fontFamily="@font/roboto_mono_medium" />
 
 </RelativeLayout>
