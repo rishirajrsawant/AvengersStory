@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="COMIC ZONE"
         android:textAlignment="center"
-        android:textColor="#bfbfbf"
+        android:textColor="#a6a6a6"
         android:textSize="30sp"
         android:fontFamily="@font/roboto_mono_medium"/>
 
