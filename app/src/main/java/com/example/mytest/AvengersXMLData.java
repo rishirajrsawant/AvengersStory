@@ -45,6 +45,9 @@ public class AvengersXMLData {
         NodeList impList    = xml.getElementsByTagName("mImp");
         NodeList musicList  = xml.getElementsByTagName("mScream");
         NodeList webList    = xml.getElementsByTagName("mWeb");
+        NodeList partList   = xml.getElementsByTagName("mPart");
+        NodeList logoList   = xml.getElementsByTagName("mLogo");
+        NodeList relimgList = xml.getElementsByTagName("mRealImage");
 
         //traverse the list to make data
         data = new Avenger[nameList.getLength()];
@@ -62,8 +65,12 @@ public class AvengersXMLData {
             String mImp             = impList.item(i).getFirstChild().getNodeValue();
             String mScream          = musicList.item(i).getFirstChild().getNodeValue();
             String mWeb             = webList.item(i).getFirstChild().getNodeValue();
+            String mPart            = partList.item(i).getFirstChild().getNodeValue();
+            String mLogo            = logoList.item(i).getFirstChild().getNodeValue();
+            String mRealImage       = relimgList.item(i).getFirstChild().getNodeValue();
 
-            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc, mRealName, mAge, mFam, mNoAvenger, mImp, mScream, mWeb);
+            data[i] = new Avenger(mID, mImageDrawable, mName, mDesc, mRealName, mAge, mFam,
+                       mNoAvenger, mImp, mScream, mWeb, mPart, mLogo, mRealImage);
         }
     }
 
@@ -76,37 +83,4 @@ public class AvengersXMLData {
 
         return data.length;
     }
-    /*public String [] getNames(){
-
-        //construct the string
-        String [] names = new String[data.length];
-
-        //populate it with names
-        for (int i = 0; i < data.length; i++){
-            names[i] = data[i].getmName();
-        }
-        return names;
-    }
-    public String [] getDescs(){
-
-        //construct the string
-        String [] descs = new String[data.length];
-
-        //populate it with names
-        for (int i = 0; i < data.length; i++){
-            descs[i] = data[i].getmDesc();
-        }
-        return descs;
-    }
-    public String [] getImages(){
-
-        //construct the string
-        String [] images = new String[data.length];
-
-        //populate it with names
-        for (int i = 0; i < data.length; i++){
-            images[i] = data[i].getmImageDrawable();
-        }
-        return images;
-    }*/
 }

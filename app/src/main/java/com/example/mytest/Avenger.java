@@ -20,10 +20,14 @@ public class Avenger implements Serializable {
     private String mImp;
     private String mScream;
     private String mWeb;
+    private String mPartner;
+    private String mLogo;
+    private String mRealImg;
 
     // Constructor that is used to create an instance of the Avenger object
     public Avenger(String mID, String mImageDrawable, String mName, String mDesc, String mRealName,
-                   String mAge, String mFam, String mNoAvenger, String mImp, String mScream, String mWeb) {
+                   String mAge, String mFam, String mNoAvenger, String mImp, String mScream,
+                   String mWeb, String mPartner, String mLogo, String mRealImg) {
         this.mID = mID;
         this.mImageDrawable = mImageDrawable;
         this.mName = mName;
@@ -35,6 +39,9 @@ public class Avenger implements Serializable {
         this.mImp = mImp;
         this.mScream = mScream;
         this.mWeb = mWeb;
+        this.mPartner = mPartner;
+        this.mLogo    = mLogo;
+        this.mRealImg = mRealImg;
     }
 
     public String getmID() {
@@ -126,5 +133,29 @@ public class Avenger implements Serializable {
 
     public void setmWeb(String mWeb) {
         this.mWeb = mWeb;
+    }
+
+    public String getmPartner() {
+        return mPartner;
+    }
+
+    public void setmPartner(String mPartner) {
+        this.mPartner = mPartner;
+    }
+
+    public String getmLogo() {
+        return mLogo;
+    }
+
+    public void setmLogo(String mLogo) {
+        this.mLogo = mLogo;
+    }
+
+    public String getmRealImg() {
+        return mRealImg;
+    }
+
+    public void setmRealImg(String mRealImg) {
+        this.mRealImg = mRealImg;
     }
 }

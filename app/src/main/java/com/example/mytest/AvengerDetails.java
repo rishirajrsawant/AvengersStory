@@ -19,7 +19,7 @@ import java.io.InputStream;
 public class AvengerDetails extends AppCompatActivity {
 
     //define the elements of layout file
-    private TextView name, real_name, age, fam, noAvenger, imp;
+    private TextView name, real_name, age, fam;
     private ImageView image_poster;
 
     private Button moreBtn = null;
@@ -31,13 +31,11 @@ public class AvengerDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_avenger_details);
 
-        name = findViewById(R.id.textView);
+        name         = findViewById(R.id.textView);
         image_poster = findViewById(R.id.imageView2);
         real_name    = findViewById(R.id.textview_realname);
         age          = findViewById(R.id.textview_agetext);
         fam          = findViewById(R.id.textview_family);
-        noAvenger    = findViewById(R.id.textview_noavg);
-        imp          = findViewById(R.id.textview_imp);
         moreBtn      = findViewById(R.id.button);
 
         final Intent intent = getIntent();
@@ -50,7 +48,7 @@ public class AvengerDetails extends AppCompatActivity {
         AssetManager assetManager = getAssets();
         InputStream inputStream = null;
         try {
-            inputStream = assetManager.open("avengers/"+data.getmID()+"/"+data.getmImageDrawable());
+            inputStream = assetManager.open("avengers/"+data.getmID()+"/"+data.getmRealImg());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -60,8 +58,6 @@ public class AvengerDetails extends AppCompatActivity {
         real_name.setText(data.getmRealName());
         age.setText(data.getmAge());
         fam.setText(data.getmFam());
-        noAvenger.setText(data.getmNoAvenger());
-        imp.setText(data.getmImp());
 
         moreBtn.setOnClickListener(new View.OnClickListener() {
             @Override

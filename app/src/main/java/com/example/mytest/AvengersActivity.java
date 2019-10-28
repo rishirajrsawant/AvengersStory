@@ -45,15 +45,6 @@ public class AvengersActivity extends AppCompatActivity {
         avengersList.setAdapter(adapter);
 
 
-        /*avengersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                MediaPlayer ring= MediaPlayer.create(AvengersActivity.this,R.raw.hulkroar);
-                ring.start();
-            }
-        });*/
-
-        Log.e("rishi", "inside main");
 
         avengersList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.widget.TextView;
 
@@ -12,8 +13,6 @@ public class Splash extends AppCompatActivity {
 
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 6000;
-    private TextView quotvw = null;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

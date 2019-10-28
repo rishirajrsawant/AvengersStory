@@ -11,10 +11,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="AVENGERS ASSEMBLE"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/List_title"
         android:textAlignment="center"
         android:textColor="#a6a6a6"
-        android:fontFamily="@font/roboto_mono_medium"
         android:textSize="30sp" />
 
     <View

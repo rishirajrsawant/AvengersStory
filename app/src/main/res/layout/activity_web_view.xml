@@ -12,10 +12,11 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MY ORIGINS"
+        android:text="COMIC ZONE"
         android:textAlignment="center"
         android:textColor="#bfbfbf"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_mono_medium"/>
 
     <WebView
         android:id="@+id/webView"

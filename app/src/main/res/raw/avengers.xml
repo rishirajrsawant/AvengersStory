@@ -11,6 +11,9 @@
         <mImp>Quick Healing Ability</mImp>
         <mScream>cap.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Steven_Rogers</mWeb>>
+        <mPart>Peggy Carter</mPart>
+        <mLogo>caplogo.png</mLogo>
+        <mRealImage>steve.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>ironman</mID>
@@ -24,6 +27,9 @@
         <mImp>Brilliant Mind</mImp>
         <mScream>ironman.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Anthony_Stark</mWeb>
+        <mPart>Pepper Pot</mPart>
+        <mLogo>ironlogo.png</mLogo>
+        <mRealImage>tony.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>thor</mID>
@@ -37,12 +43,15 @@
         <mImp>Superman of Marvel</mImp>
         <mScream>thor.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Thor</mWeb>
+        <mPart>Sometimes Jane, sometimes Valkyrie</mPart>
+        <mLogo>thorlogo.png</mLogo>
+        <mRealImage>thor.jpeg</mRealImage>
     </avenger>
     <avenger>
         <mID>widow</mID>
         <mImageDrawable>blwid.jpg</mImageDrawable>
         <mName>Black Widow</mName>
-        <mDesc>Hottest Avenger</mDesc>
+        <mDesc>Beautiful Avenger</mDesc>
         <mRealName>Natasha Romanoff</mRealName>
         <mAge>50</mAge>
         <mFam>Orphanage</mFam>
@@ -50,6 +59,9 @@
         <mImp>Can Control Hulk</mImp>
         <mScream>widow.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Black_Widow</mWeb>
+        <mPart>Random guys but had strong feeling for Hulk</mPart>
+        <mLogo>widowlogo.png</mLogo>
+        <mRealImage>nat.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>hulk</mID>
@@ -63,6 +75,9 @@
         <mImp>Even Iron Man is scared of him</mImp>
         <mScream>hulk.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Hulk</mWeb>
+        <mPart>Would have been lucky with Black Widow</mPart>
+        <mLogo>hulklogo.png</mLogo>
+        <mRealImage>bruce.png</mRealImage>
     </avenger>
     <avenger>
         <mID>panther</mID>
@@ -76,6 +91,9 @@
         <mImp>Use of Kinetic Energy</mImp>
         <mScream>panther.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Black_Panther</mWeb>
+        <mPart>Queen of Wakanda</mPart>
+        <mLogo>blacklogo.png</mLogo>
+        <mRealImage>tchalla.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>hawk</mID>
@@ -89,6 +107,9 @@
         <mImp>Can Replace Sniper</mImp>
         <mScream>hawkeye.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Hawkeye</mWeb>
+        <mPart>Laura Barton</mPart>
+        <mLogo>hawklogo.png</mLogo>
+        <mRealImage>clint.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>spidey</mID>
@@ -97,11 +118,14 @@
         <mDesc>Stubborn, another Tony</mDesc>
         <mRealName>Peter Parker</mRealName>
         <mAge>22</mAge>
-        <mFam>Hot Aunt May</mFam>
+        <mFam>Beautiful Aunt May</mFam>
         <mNoAvenger>Reporter</mNoAvenger>
         <mImp>Son for Tony Stark</mImp>
         <mScream>spiderman.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Spider-Man</mWeb>
+        <mPart>Mary Jane</mPart>
+        <mLogo>spideylogo.png</mLogo>
+        <mRealImage>peter.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>witch</mID>
@@ -115,6 +139,9 @@
         <mImp>If angry, can make Thanos cry</mImp>
         <mScream>witch.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Scarlet_Witch</mWeb>
+        <mPart>RIP Vision</mPart>
+        <mLogo>witchlogo.png</mLogo>
+        <mRealImage>wanda.jpg</mRealImage>
     </avenger>
     <avenger>
         <mID>ant</mID>
@@ -128,5 +155,8 @@
         <mImp>Resizable</mImp>
         <mScream>antman.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Henry_Pym_(Earth-2301)</mWeb>
+        <mPart>The Wasp</mPart>
+        <mLogo>antlogo.png</mLogo>
+        <mRealImage>scott.jpg</mRealImage>
     </avenger>
 </dataroot>
