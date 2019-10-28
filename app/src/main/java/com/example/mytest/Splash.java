@@ -3,16 +3,19 @@ package com.example.mytest;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.Image;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Splash extends AppCompatActivity {
 
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 6000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,5 +36,6 @@ public class Splash extends AppCompatActivity {
                 Splash.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
+
     }
 }

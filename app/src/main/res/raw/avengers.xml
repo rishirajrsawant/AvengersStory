@@ -51,7 +51,7 @@
         <mID>widow</mID>
         <mImageDrawable>blwid.jpg</mImageDrawable>
         <mName>Black Widow</mName>
-        <mDesc>Beautiful Avenger</mDesc>
+        <mDesc>Beautiful</mDesc>
         <mRealName>Natasha Romanoff</mRealName>
         <mAge>50</mAge>
         <mFam>Orphanage</mFam>
@@ -115,12 +115,12 @@
         <mID>spidey</mID>
         <mImageDrawable>spiderman.jpg</mImageDrawable>
         <mName>Spider-Man</mName>
-        <mDesc>Stubborn, another Tony</mDesc>
+        <mDesc>Sticky</mDesc>
         <mRealName>Peter Parker</mRealName>
         <mAge>22</mAge>
         <mFam>Beautiful Aunt May</mFam>
         <mNoAvenger>Reporter</mNoAvenger>
-        <mImp>Son for Tony Stark</mImp>
+        <mImp>Son of Tony Stark</mImp>
         <mScream>spiderman.mp3</mScream>
         <mWeb>https://marvel.fandom.com/wiki/Spider-Man</mWeb>
         <mPart>Mary Jane</mPart>
@@ -131,7 +131,7 @@
         <mID>witch</mID>
         <mImageDrawable>witch.jpg</mImageDrawable>
         <mName>Scarlet Witch</mName>
-        <mDesc>My Favourite Avenger</mDesc>
+        <mDesc>My Favourite</mDesc>
         <mRealName>Wanda Maximoff</mRealName>
         <mAge>31</mAge>
         <mFam>Only brother left was QuickSilver(RIP)</mFam>

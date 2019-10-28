@@ -5,12 +5,18 @@
     android:background="@drawable/avengers"
     android:layout_height="match_parent">
 
-    <!--<ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="120dp"
-        android:layout_marginTop="590dp"
-        android:layout_weight="1"
-        android:baselineAlignBottom="false"
-        app:srcCompat="@drawable/shield" />-->
+    <TextView
+        android:id="@+id/textView_splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="By MARVEL | S.H.I.E.L.D."
+        android:textAlignment="center"
+        android:textColor="#a6a6a6"
+        android:textSize="20sp" />
 </LinearLayout>

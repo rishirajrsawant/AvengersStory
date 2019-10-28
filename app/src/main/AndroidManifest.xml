@@ -6,15 +6,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/avengerslogo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/avengerslogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".WebViewAct"></activity>
         <activity android:name=".AvengersActivity" />
         <activity android:name=".MoreFacts" />
-        <activity android:name=".AvengerDetails" /> <!-- <activity android:name=".DetailsActivity"></activity> -->
+        <activity android:name=".AvengerDetails" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

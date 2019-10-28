@@ -26,11 +26,5 @@ public class WebViewAct extends AppCompatActivity {
 
         WebView myWebView = (WebView) findViewById(R.id.webView);
         myWebView.loadUrl(URL);
-
-        //myWebView.getSettings().setJavaScriptEnabled(true);
-        //myWebView.getSettings().setLoadWithOverviewMode(true);
-        //myWebView.getSettings().setUseWideViewPort(true);
-
-
     }
 }
