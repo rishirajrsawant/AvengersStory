@@ -33,7 +33,6 @@ public class AvengersActivity extends AppCompatActivity {
 
         data = new AvengersXMLData(this);
 
-        //int length = data.getLength();
         for (int i = 0; i < data.getLength(); i++) {
             AvengerList.add(data.getAvenger(i));
         }
