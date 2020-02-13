@@ -1,3 +1,8 @@
-# MyTest
+# Avengers Story
 
-Test app created for basic functionality and git usage
+Android application created as a college assignment, to display funny 
+information about my favourite Avengers.
+Implemented
+-custom lists
+-audio functionality
+-WebViews
