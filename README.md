@@ -15,7 +15,7 @@ Implemented:
 -Normal Layout functionalities and Buttons
 
 1. Splash Screen
-![Splash Screen](screens/3.jpg)
+![Splash Screen](screens/3.jpg) {:class="img-responsive"}
 
 2. Custom List Screen
 ![Custom List Screen](screens/1.jpg)
