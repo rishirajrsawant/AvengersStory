@@ -16,14 +16,15 @@ Implemented:
 
 1. Splash Screen
 <img src="screens/3.jpg" alt="Splash Screen" height="600" width="400">
-![Splash Screen](screens/3.jpg)
+
 
 2. Custom List Screen
-![Custom List Screen](screens/1.jpg)
+<img src="screens/1.jpg" alt="Custom List Screen" height="600" width="400">
 
 3. Basic Info Screen
-![Basic Info Screen](screens/4.jpg)
+<img src="screens/4.jpg" alt="Basic Info Screen" height="600" width="400">
 
 3. More Info Screen
-![More Info Screen](screens/2.jpg)
+<img src="screens/2.jpg" alt="More Info Screen" height="600" width="400">
+
 
