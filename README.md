@@ -15,6 +15,7 @@ Implemented:
 -Normal Layout functionalities and Buttons
 
 1. Splash Screen
+<img src="screens/3.jpg" alt="Splash Screen" height="600" width="400">
 ![Splash Screen](screens/3.jpg)
 
 2. Custom List Screen
